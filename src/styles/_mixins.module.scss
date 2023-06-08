@@ -1,0 +1,18 @@
+$background: rgba(255, 255, 255, 0.2);
+
+:root {
+  --green: #00c4cc;
+  --white: #ffffff;
+  --purple: #7c2ae8;
+  --black: #191919;
+}
+
+@mixin centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin shadow {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}

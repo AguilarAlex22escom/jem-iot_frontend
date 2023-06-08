@@ -1,0 +1,25 @@
+@import '../mixins.module';
+
+button.button {
+    @include shadow;
+    text-align: center;
+    font-size: 2em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+button.Green, a {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+button.shadow {
+    @include shadow;
+}
