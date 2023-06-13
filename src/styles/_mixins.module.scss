@@ -3,6 +3,7 @@ $background: rgba(255, 255, 255, 0.2);
 :root {
   --green: #00c4cc;
   --white: #ffffff;
+  --light-grey: #e9e8e8;
   --purple: #7c2ae8;
   --black: #191919;
 }
@@ -15,4 +16,18 @@ $background: rgba(255, 255, 255, 0.2);
 
 @mixin shadow {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+@mixin title {
+  font-size: 36px;
+}
+
+@mixin paragraph {
+  font-size: 16px;
+}
+
+@mixin cardStyle {
+  border-radius: 25px;
+  background-color: var(--white);
+  box-shadow: 2px 2px 20px lighten(#191919, 40%);
 }

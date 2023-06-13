@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import './App.css'
 const Home = lazy(() => import('./pages/Home'));
 const TemperatureSensor = lazy(() => import('./pages/TemperatureSensor'));
 

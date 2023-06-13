@@ -19,9 +19,9 @@ const Home: FC = () => {
   </Helmet>*/}
       <main className={home}>
         <div className={homeActions}>
-          <p className={homeTitle}>{projectName}</p>
+          <h1 className={homeTitle}>{projectName}</h1>
           <Button withShadow variant="Green">
-            <a href="/">Comenzar</a>
+            <a href="/temperaturesensor">Comenzar</a>
           </Button>
         </div>
       </main>

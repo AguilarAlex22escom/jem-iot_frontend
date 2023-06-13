@@ -1,18 +1,19 @@
-@import '../mixins.module';
+@import "../mixins.module";
 
 main.home {
+  @include centering;
+  background-color: var(--white);
+
+  div.homeActions {
     @include centering;
-    background-color: var(--white);
+    background-color: blue;
+    flex-wrap: wrap;
+    max-width: 50%;
+    min-width: 256px;
+    min-height: 100vh;
 
-    div.homeActions {
-        @include centering;
-        flex-wrap: wrap;
-        max-width: 50%;
-        min-width: 256px;
-        height: fit-content;
-
-        p.homeTitle {
-            font-size: 3em;
-        }    
+    h1.homeTitle {
+      font-size: 3em;
     }
+  }
 }

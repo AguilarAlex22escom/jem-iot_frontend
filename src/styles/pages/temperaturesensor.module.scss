@@ -1,0 +1,31 @@
+@import '../mixins.module';
+
+body {
+    background-color: var(--purple);
+    @include centering;
+}
+
+main.temperatureSensor {
+    @include centering;
+
+    section.temperatureInfo {
+        @include centering;
+        flex-wrap: wrap;
+        max-width: 50%;
+        min-width: 256px;
+        height: fit-content;
+
+        h1.temperatureTitle {
+            @include title;
+            color: var(--white);
+        }
+    }
+
+    picture.temperatureRender {
+        @include centering;
+        @include cardStyle;
+        max-width: 50%;
+        min-width: 256px;
+        height: fit-content;
+    }
+}

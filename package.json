@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "express": "^4.18.2",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-helmet-async": "^1.3.0",
-    "react-router-dom": "^6.12.0"
+    "react-router-dom": "^6.12.0",
+    "serialport": "^11.0.0",
+    "socket.io": "^4.6.2",
+    "socket.io-client": "^4.6.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
@@ -31,5 +33,18 @@
     "scss": "^0.2.4",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AguilarAlex22escom/JEM-IoT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AguilarAlex22escom/JEM-IoT/issues"
+  },
+  "homepage": "https://github.com/AguilarAlex22escom/JEM-IoT#readme",
+  "description": ""
 }

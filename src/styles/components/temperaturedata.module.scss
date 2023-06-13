@@ -1,0 +1,14 @@
+@import "../mixins.module";
+
+div.temperatureData {
+  @include centering;
+  flex-wrap: wrap;
+  width: 40%;
+  height: fit-content;
+
+  p.temperatureStatus,
+  p.temperatureVoltage {
+    color: var(--white);
+    line-height: 35px;
+}
+}
