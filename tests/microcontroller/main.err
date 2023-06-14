@@ -1,0 +1,4 @@
+>>> Warning 202 "main.c" Line 13(10,15): Variable never used:   input
+      Memory usage:   ROM=10%      RAM=5% - 11%
+      0 Errors,  1 Warnings.
+Build Successful.

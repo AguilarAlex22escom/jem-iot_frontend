@@ -13,9 +13,9 @@ export const TemperatureData: FC = () => {
   const [voltage, useVoltage] = useState("0.0");
 
   useEffect(() => {
-    webSocket.on("temperature", (datasTemperature) => {
-      setTemperature(datasTemperature);
-    });
+    webSocket.on("temperature", (data) => {
+      setTemperature(data);
+    }); 
 
     return () => {
       webSocket.off("temperature");

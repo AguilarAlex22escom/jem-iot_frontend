@@ -1,0 +1,11 @@
+ÀÄmain
+   ÀÄMAIN  0/135  Ram=11
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@ITOF  0/31  Ram=2
+      ÃÄ@MULFF  0/117  Ram=13
+      ÃÄ@DIVFF  0/204  Ram=14
+      ÀÄ@PRINTF_L32D_9600_62_63FPFPF  0/230  Ram=13
+         ÃÄ@MULFF  0/117  Ram=13
+         ÃÄ@FTOSD  (Inline)  Ram=5
+         ÃÄ@DIV3232  0/79  Ram=13
+         ÀÄ@DIV3232  0/79  Ram=13

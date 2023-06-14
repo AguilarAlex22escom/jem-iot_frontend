@@ -1,0 +1,108 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-023 MAIN.sensorRTD
+024-027 MAIN.datosRTD
+028     MAIN.input
+029-02C @PRINTF_L32D_9600_62_63FPFPF.P1
+029-02A @ITOF.P2
+029     MAIN.@SCRATCH1
+02A     MAIN.@SCRATCH2
+02B     MAIN.@SCRATCH3
+02C     MAIN.@SCRATCH4
+02D-030 @DIVFF.P1
+02D     @PRINTF_L32D_9600_62_63FPFPF.P2
+02E     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH1
+02F     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH2
+030     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH3
+031-034 @DIVFF.P1
+031     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH4
+032     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH5
+033     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH6
+034     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH7
+035     @DIVFF.@SCRATCH1
+035     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH8
+036-039 @DIV3232.P1
+036-039 @MULFF.P2
+036-039 @FTOSD.P3
+036     @DIVFF.@SCRATCH2
+037     @DIVFF.@SCRATCH3
+038     @DIVFF.@SCRATCH4
+039     @DIVFF.@SCRATCH5
+03A-03D @MULFF.P1
+03A-03D @DIV3232.P2
+03A     @DIVFF.@SCRATCH6
+03A     @FTOSD.@SCRATCH1
+03E     @MULFF.@SCRATCH1
+03E     @DIV3232.@SCRATCH1
+03F     @MULFF.@SCRATCH2
+03F     @DIV3232.@SCRATCH2
+040     @MULFF.@SCRATCH3
+040     @DIV3232.@SCRATCH3
+041     @MULFF.@SCRATCH4
+041     @DIV3232.@SCRATCH4
+042     @MULFF.@SCRATCH5
+042     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @ITOF
+000023  @MULFF
+000098  @DIVFF
+000164  @DIV3232
+0001B3  @PRINTF_L32D_9600_62_63FPFPF
+0001DA  @FTOSD
+000299  @cinit1
+000299  MAIN
+0002AB  @cinit2
+
+Project Directory:
+    C:\Users\Alexander\Documents\sexto_semestre_universidad\instrumentación_y_control\segundo_parcial\proyectos\interfaz\jem-iot\tests\microcontroller\
+
+Project Files:
+    main.c                                                  [13-jun.-23 01:28  CRC=912EFAFE]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [12-nov.-13 14:35  CRC=81334808]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-jul.-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [14-jul.-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 13:55  CRC=2D1F019F]
+
+Source signature=68505433
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
