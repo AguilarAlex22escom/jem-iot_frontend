@@ -8,6 +8,7 @@ div.temperatureData {
 
   p.temperatureStatus,
   p.temperatureVoltage {
+    @include paragraph;
     color: var(--white);
     line-height: 35px;
   }

@@ -1,12 +1,21 @@
-$background: rgba(255, 255, 255, 0.2);
+/* $background: rgba(255, 255, 255, 0.2); */
+$background: darken(#7c2ae8, 45%);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+}
 
 :root {
+  --blue: #0348FF;
   --green: #00c4cc;
   --white: #ffffff;
   --light-grey: #e9e8e8;
   --purple: #7c2ae8;
   --black: #191919;
 }
+
 
 @mixin centering {
   display: flex;
@@ -19,11 +28,13 @@ $background: rgba(255, 255, 255, 0.2);
 }
 
 @mixin title {
-  font-size: 36px;
+  font-size: 2em;
+  line-height: 35px;
 }
 
 @mixin paragraph {
   font-size: 16px;
+  line-height: 36px;
 }
 
 @mixin cardStyle {

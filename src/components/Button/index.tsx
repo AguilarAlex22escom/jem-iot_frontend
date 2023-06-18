@@ -3,7 +3,6 @@ import { FC, HTMLProps, ReactNode } from "react";
 import styles from '../../styles/components/button.module.scss';
 
 const { button, White, Green, Purple, shadow } = styles;
-
 interface ButtonProps extends HTMLProps<HTMLButtonElement> {
   variant?: "White" | "Green" | "Purple";
   withShadow?: boolean;

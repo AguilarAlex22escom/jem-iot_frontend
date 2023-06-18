@@ -1,0 +1,31 @@
+@import "../mixins.module";
+
+main.levelSensor {
+  @include centering;
+  flex-wrap: wrap-reverse;
+
+  section.levelInfo {
+    @include centering;
+    flex-direction: column;
+    width: 100%;
+    min-width: 256px;
+
+    h1.levelTitle {
+      @include title;
+      color: var(--white);
+    }
+
+    p.levelTank,
+    p.levelPool {
+      @include paragraph;
+      color: var(--white);
+    }
+  }
+
+  section.cards {
+    @include centering;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 256px;
+  }
+}

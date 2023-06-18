@@ -2,12 +2,12 @@
 
 main.home {
   @include centering;
-  background-color: var(--white);
+  width: 100%;
 
   div.homeActions {
     @include centering;
-    background-color: blue;
     flex-wrap: wrap;
+    flex-direction: column;
     max-width: 50%;
     min-width: 256px;
     min-height: 100vh;

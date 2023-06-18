@@ -1,25 +1,39 @@
-@import '../mixins.module';
+@import "../mixins.module";
 
 button.button {
-    @include shadow;
-    text-align: center;
-    font-size: 2em;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 100px;
-    border: none;
-    padding: 20px;
+  @include shadow;
+  text-align: center;
+  font-size: 2em;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100px;
+  border: none;
+  padding: 20px;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
 }
 
-button.Green, a {
-    background-color: var(--green);
-    color: var(--white);
+button.Green {
+  background-color: var(--green);
+  transition: background-color 0.2s linear;
+  
+  &:hover {
+    background-color: darken(#00c4cc, 15%);
+  }
+}
+
+button.Purple {
+  background-color: var(--purple);
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: darken(#7c2ae8, 15%);
+  }
 }
 
 button.shadow {
-    @include shadow;
+  @include shadow;
 }

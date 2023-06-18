@@ -1,21 +1,21 @@
 @import "../mixins.module";
 
-main.temperatureSensor {
+main.pulseSensor {
   @include centering;
+  flex-wrap: wrap-reverse;
 
-  section.temperatureInfo {
+  section.pulseInfo {
     @include centering;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 50%;
+    width: 100%;
     min-width: 256px;
 
-    h1.temperatureTitle {
+    h1.pulseTitle {
       @include title;
       color: var(--white);
     }
 
-    p.temperatureStatus {
+    p.pulseData {
       @include paragraph;
       color: var(--white);
     }

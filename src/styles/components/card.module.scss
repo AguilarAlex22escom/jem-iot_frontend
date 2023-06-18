@@ -1,0 +1,43 @@
+@import "../mixins.module";
+
+section.card {
+  @include centering;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 28rem;
+  margin: 2.5%;
+  padding: 20px;
+}
+
+section.SensorOption {
+  background-color: lighten($background, 5%);
+  border: 1px solid lighten($background, 10%);
+  border-radius: 10px;
+  
+  h1 {
+    @include title;
+    line-height: 1.5;
+  }
+  
+  p {
+    @include paragraph;
+    color: var(--white);
+    line-height: 1.5;
+  }
+
+}
+
+section.SensorStatus {
+  background-color: var(--white);
+  border: 1px solid lighten($background, 10%);
+  border-radius: 10px;
+}
+
+section.Blue {
+    box-shadow: 5px 5px 15px var(--blue);
+}
+
+section.Purple {
+  box-shadow: 5px 5px 15px var(--purple);
+}
