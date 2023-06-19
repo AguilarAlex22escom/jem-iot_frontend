@@ -1,8 +1,9 @@
 import { FC, useState, useEffect } from "react";
 import { io } from "socket.io-client";
-import { SensorKeys, socket } from "../constants";
+import { projectName, SensorKeys, socket } from "../constants";
 import { Card } from "../components/Card";
 import styles from "../styles/pages/pulsesensor.module.scss";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const { pulseSensor, pulseInfo, pulseTitle, pulseData } = styles;
 
@@ -21,7 +22,12 @@ const PulseSensor: FC = () => {
   }, []);
 
   return (
-    <main className={pulseSensor}>
+    <HelmetProvider context={{}}>
+      <Helmet>
+      <meta charSet="UTF-8" />
+        <title>{projectName} - Contador de pulsos</title>
+      </Helmet>
+      <main className={pulseSensor}>
       <section className={pulseInfo}>
         <h1 className={pulseTitle}>Sensor contador de pulsos CNY-70</h1>
         <p className={pulseData}>Cantidad de pulsos por minuto: {pulse}</p>
@@ -35,6 +41,8 @@ const PulseSensor: FC = () => {
         <p>Sensor contador de pulsos</p>
       </Card>
     </main>
+    </HelmetProvider>
+    
   );
 };
 

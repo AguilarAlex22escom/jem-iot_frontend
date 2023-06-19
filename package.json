@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/AguilarAlex22escom/jem-iot_frontend",
   "name": "jem-iot",
   "private": true,
   "version": "0.0.0",
@@ -6,15 +7,19 @@
   "scripts": {
     "dev": "set PORT=3000 && vite",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "^1.6.2",
     "clsx": "^1.2.1",
+    "gh-pages": "^5.0.0",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet-async": "^1.3.0",
     "react-router-dom": "^6.12.0",
     "socket.io": "^4.6.2",
     "socket.io-client": "^4.6.2"
@@ -45,6 +50,5 @@
   "bugs": {
     "url": "https://github.com/AguilarAlex22escom/JEM-IoT/issues"
   },
-  "homepage": "https://github.com/AguilarAlex22escom/JEM-IoT#readme",
   "description": ""
 }
