@@ -29,10 +29,8 @@ const TemperatureSensor: FC = () => {
   return (
     <HelmetProvider context={{}}>
       <Helmet>
-        <Helmet>
-          <meta charSet="UTF-8" />
-          <title>{projectName} - Sensor de temperatura</title>
-        </Helmet>
+        <meta charSet="UTF-8" />
+        <title>{projectName} - Sensor de temperatura</title>
       </Helmet>
       <main className={temperatureSensor}>
         <section className={temperatureInfo}>

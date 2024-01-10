@@ -1,14 +1,25 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { io } from "socket.io-client";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { projectName, OptionKeys } from "../constants";
+import { projectName, OptionKeys, socket } from "../constants";
 import { Card } from "../components/Card";
 import { Button } from "../components/Button";
 import styles from "../styles/pages/options.module.scss";
+
+const webSocket = io(socket);
 
 const { options, optionsTitle, optionsSection, optionName, optionDescription } =
   styles;
 
 const Options: FC = () => {
+  const [character, setCharacter] = useState("");
+
+  const sendChar = (char: string) => {
+    setCharacter(char);
+    webSocket.emit("sendChar", char);
+  };
+
   return (
     <HelmetProvider context={{}}>
       <Helmet>
@@ -25,7 +36,9 @@ const Options: FC = () => {
               industriales.
             </p>
             <Button withShadow variant="Purple">
-              <a href="/temperaturesensor">Ir allá</a>
+              <Link to="/temperaturesensor" onClick={() => sendChar('a')}>
+                Ir allá
+              </Link>
             </Button>
           </Card>
           <Card key={OptionKeys[1]} variant="SensorOption" shadow="Blue">
@@ -35,7 +48,7 @@ const Options: FC = () => {
               medición de frecuencia cardíaca.
             </p>
             <Button withShadow variant="Purple">
-              <a href="/pulsesensor">Ir allá</a>
+              <Link to="/pulsesensor" onClick={() => sendChar('b')}>Ir allá</Link>
             </Button>
           </Card>
           <Card key={OptionKeys[2]} variant="SensorOption" shadow="Blue">
@@ -45,7 +58,7 @@ const Options: FC = () => {
               almacenado de líquidos.
             </p>
             <Button withShadow variant="Purple">
-              <a href="/levelsensor">Ir allá</a>
+              <Link to="/levelsensor" onClick={() => sendChar('c')}>Ir allá</Link>
             </Button>
           </Card>
         </section>

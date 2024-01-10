@@ -13,8 +13,6 @@ main.options {
   section.optionsSection {
     @include centering;
     justify-content: space-evenly;
-    width: 100%;
-
-    
+    flex-grow: 1;
   }
 }
